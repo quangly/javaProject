@@ -61,11 +61,22 @@ public class Employee implements Comparable {
             salary = value;  }
     public void printEmployee()
     {
-        System.out.println(lastName +", "+firstName+"\nTitle: " + title + 
-                "\nAddress: " + address.toString() + "\n\nEmployee ID: " + employeeID + 
-                "\nDepartment: "+getDeptName(deptID));
-        System.out.printf("Salary: $%8.2f", salary);
-        System.out.println();      
+
+        if (address != null){
+            System.out.println(lastName +", "+firstName+"\nTitle: " + title +
+                    "\nAddress: " + address.toString() + "\n\nEmployee ID: " + employeeID +
+                    "\nDepartment: "+getDeptName(deptID));
+            System.out.printf("Salary: $%8.2f", salary);
+            System.out.println();
+        }
+        else{
+            System.out.println(lastName +", "+firstName+"\nTitle: " + title +
+                    "\nAddress: no address " + "\n\nEmployee ID: " + employeeID +
+                    "\nDepartment: "+getDeptName(deptID));
+            System.out.printf("Salary: $%8.2f", salary);
+            System.out.println();
+        }
+
     }
     public String getDeptName(int value)
     {
