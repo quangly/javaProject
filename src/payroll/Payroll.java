@@ -8,9 +8,9 @@ public class Payroll {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Address a1 = new Address("123", "South Main Street", "Cleveland", "OH", 
+        Address a1 = new Address("123", "(Peggy) South Main Street", "Cleveland", "OH",
                 "12345");
-        Address a2 = new Address("123", "North Main Street", "Willoughby", "OH", 
+        Address a2 = new Address("123", "(Bob) North Main Street", "Willoughby", "OH",
                 "54321");
         Employee ee1 = new Employee("Peggy", "Fisher", "717-555-1212",a1, 
                 955123, 003, "Lecturer",45000.00 );
@@ -19,8 +19,13 @@ public class Payroll {
 		Employee ee2 = new Employee("Bob", "Fisher", "717-555-1212",a2, 955123, 
                 003, "Lecturer",45500.00 );
         ee2.printEmployee();
-		//compare salaries to see who makes more money  
-		  
+		//compare salaries to see who makes more money
+
+		ee2.setSalary(6000000);
+		ee2.setTitle(("Producer"));
+
+		ee2.printEmployee();
+
 		if(ee1.compareTo(ee2)==0)
 			System.out.println("\nEqual salaries");
 		else if(ee1.compareTo(ee2)<0)
