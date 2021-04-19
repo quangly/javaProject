@@ -2,7 +2,7 @@ package payroll;
 import java.util.*;
 /**
  *
- * @author Peggy Fisher
+ * @author Quang Ly
  */
 public class Employee implements Comparable {
     //instance data

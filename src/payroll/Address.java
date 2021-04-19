@@ -2,7 +2,7 @@ package payroll;
 
 /**
  *
- * @author Peggy Fisher
+ * @author Quang Ly
  */
 public class Address implements Comparable{
     private String houseNumber;

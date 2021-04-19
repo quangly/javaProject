@@ -1,7 +1,7 @@
 package payroll;
 /**
  *
- * @author Peggy Fisher
+ * @author Quang Ly
  */
 public class Payroll {
     /**
