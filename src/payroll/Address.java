@@ -2,7 +2,7 @@ package payroll;
 
 /**
  *
- * @author Quang Ly
+ * @author Peggy Fisher
  */
 public class Address implements Comparable{
     private String houseNumber;
@@ -61,5 +61,4 @@ public class Address implements Comparable{
         else
             return 0;
     }
-
 }
