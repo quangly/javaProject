@@ -3,7 +3,7 @@ import java.lang.*;
 import java.util.Arrays;
 /**
  *
- * @author Peggy Fisher
+ * @author Quang Ly
  */
 public class SampleAPIs {
 

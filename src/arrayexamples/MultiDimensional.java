@@ -3,7 +3,7 @@ package arrayexamples;
 
 /**
  *
- * @author Peggy Fisher
+ * @author Quang Ly
  */
 public class MultiDimensional {
 
