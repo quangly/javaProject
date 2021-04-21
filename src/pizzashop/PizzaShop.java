@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pizzashop;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -20,10 +16,14 @@ public class PizzaShop {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter customer name: ");
         String name = in.nextLine();
+        ArrayList<Pizza> pizzas = new ArrayList<Pizza>();
+        String response = "y";
+        while(response.equals("y"))
+        {
         System.out.println("What type of pizza would you like, regular or "
                 + "sicilian? ");
         String type = in.nextLine();
-        //Pizza pizza1 = new Regular();
+         //Pizza pizza1 = new Regular();
         if(type.equalsIgnoreCase("regular"))
         {
             System.out.println("What size? S, M, L, X?");
@@ -46,7 +46,9 @@ public class PizzaShop {
                 pizza1 = new Regular(18);
             }
             pizza1.getToppings();
-            pizza1.printSring();
+            pizzas.add(pizza1);
+            
+           
         }
         else
         {
@@ -66,8 +68,16 @@ public class PizzaShop {
                 pizza1 = new Sicilian(14);
             }
             pizza1.getToppings();
-            pizza1.printSring();
+            pizzas.add(pizza1);
+            
         }
+            System.out.println("Do you want to order another pizza? (y/n)");
+            response = in.nextLine();
         }
+        for(Pizza p : pizzas)
+        {
+            p.printString();
+        }
+    }
     
 }

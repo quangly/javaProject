@@ -48,7 +48,7 @@ public abstract class Pizza implements Comparable{
         else 
             return 1;
     }
-     public void printSring()
+     public void printString()
     {
         String topping="";
         if(toppings.size()==0)
