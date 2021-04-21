@@ -15,7 +15,7 @@ public class MultiDimensional {
             {500, 525, 640},
             {475, 425, 750},
             {625, 490, 510}};
-        System.out.println("Jan\tFeb\tMar");
+        System.out.println("Jan\t\tFeb\t\tMar");
         
         for(int row = 0;row < rents.length; row++)
         {
